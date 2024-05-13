@@ -29,14 +29,13 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-#TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := twrp_defconfig
 TARGET_KERNEL_DEVICE_DEFCONFIG := device_hero2qlte_chnzc
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image.gz
-TARGET_PREBUILT_DTB := $(DEVICE_TREE)/dtb.img
+
 
 # Boot image
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=24M@0-0xffffffff rcupdate.rcu_expedited=1
